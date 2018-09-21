@@ -1,0 +1,14 @@
+body {
+  background: #ecf0f1;
+  color: #333;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+#map-template {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+}
