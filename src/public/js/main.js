@@ -16,8 +16,7 @@ map.addLayer(marker);
 // Geolocation
 map.locate({enableHighAccuracy: true})
 map.on('locationfound', (e) => {
-  console.log(e);
-  const coords = [e.latitude, e.longitude];
+  const coords = [e.latlng.lat, e.latlng.lng];
   const newMarker = L.marker(coords);
   newMarker.bindPopup('You are Here!');
   map.addLayer(newMarker);
